@@ -135,3 +135,22 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+.fireworks-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+}
+.firework {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}

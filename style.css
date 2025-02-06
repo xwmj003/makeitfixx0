@@ -1,0 +1,136 @@
+
+        /* 全局样式 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #000016, #002752);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    height: 100vh;
+    background-image: url('https://github.com/xwmj003/MakeItFixxBackground0/blob/main/BackgroundMakeItFixx01.png?raw=true');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.051);
+    background-blend-mode: darken;
+}
+
+/* 菜单按钮（☰） */
+.menu-toggle {
+    display: none; /* 默认隐藏 */
+    font-size: 2em;
+    color: rgba(103, 103, 103, 0.94);
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+/* 导航栏 */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: -100%; /* 默认隐藏 */
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 60px;
+    transition: left 0.5s ease-in-out; /* 滑动动画 */
+    z-index: 1001;
+}
+
+/* 显示菜单 */
+.navbar.show {
+    left: 0;
+}
+
+/* 菜单项样式 */
+.navbar a {
+    color: cyan;
+    text-decoration: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 15px;
+    white-space: nowrap;
+    transition: text-shadow 0.3s;
+}
+
+.navbar a:hover {
+    text-shadow: 0px 0px 10px cyan;
+}
+
+/* 适配 PC 端（大屏幕） */
+@media screen and (min-width: 769px) {
+    .menu-toggle {
+        display: none; /* PC 端隐藏 ☰ 按钮 */
+    }
+
+    .navbar {
+        left: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.567);
+        padding: 10px;
+    }
+
+    .navbar a {
+        padding: 10px 20px;
+    }
+}
+
+/* 适配小屏幕 */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* 小屏幕时显示按钮 */
+    }
+}
+
+/* 页面内容 */
+.content {
+    margin-top: 80px;
+    padding: 50px;
+    flex: 1;
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000428;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgb(125, 125, 125), rgb(48, 48, 48));
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(205, 205, 205);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgb(44, 44, 44), rgb(108, 108, 108));
+    box-shadow: 0px 0px 15px rgba(158, 158, 158, 0.648);
+}
+
+/* 渐入动画 */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

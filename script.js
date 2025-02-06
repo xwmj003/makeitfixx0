@@ -25,7 +25,7 @@
     
     function toggleMenu() {
 document.getElementById("navbar").classList.toggle("show");
-};
+}
 
 function createFireworkExplosion(x, y) {
     for (let i = 0; i < 30; i++) {

@@ -55,7 +55,7 @@ function launchFireworks() {
         const x = Math.random() * window.innerWidth;
         const y = Math.random() * (window.innerHeight / 2) + window.innerHeight / 4;
         createFireworkExplosion(x, y);
-    }, 500);
+    }, 300);
 
     setTimeout(() => {
         clearInterval(interval);

@@ -64,3 +64,8 @@ function launchFireworks() {
 }
 
 window.onload = launchFireworks;
+
+function makeit1MostrarTexto(id) {
+    var texto = document.getElementById(id);  // esto son los botones de informaciones ocultados
+    texto.classList.toggle("makeit1-show");
+}

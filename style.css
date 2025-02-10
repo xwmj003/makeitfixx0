@@ -171,3 +171,19 @@ body {
     background-color: rgba(113, 212, 212, 0.714);
     border-radius: 10px;
     }
+
+    .window {
+        max-width: 900px;
+        padding: 20px;
+        background-color: #ff4aff62;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        font-size: 18px;
+        color: #000000;
+        overflow: auto; /* 内容超出时出现滚动条 */
+        border: 2px solid #202020c7;
+        border-radius: 10px;
+    }

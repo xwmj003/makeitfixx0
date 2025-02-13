@@ -1,23 +1,23 @@
 
         /* 全局样式 */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(90deg, #000016, #002752);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    overflow-x: hidden;
-    height: 100vh;
-    background-image: url('https://github.com/xwmj003/MakeItFixxBackground0/blob/main/BackgroundMakeItFixx01.png?raw=true');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.015);
-    background-blend-mode: darken;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(90deg, #000016, #002752);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
+            height: 100vh;
+            background-image: url('https://github.com/xwmj003/MakeItFixxBackground0/blob/main/BackgroundMakeItFixx01.png?raw=true');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.015);
+            background-blend-mode: darken;
+        }
 
 /* 菜单按钮（☰） */
 .menu-toggle {
@@ -110,17 +110,17 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #000428;
+    background: #5d5f5f;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, rgb(125, 125, 125), rgb(48, 48, 48));
+    background: linear-gradient(180deg, rgba(20, 200, 227, 0.892), rgba(33, 240, 174, 0.892));
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(205, 205, 205);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, rgb(44, 44, 44), rgb(108, 108, 108));
+    background: linear-gradient(180deg, rgba(81, 206, 225, 0.892), rgba(51, 220, 167, 0.892));
     box-shadow: 0px 0px 15px rgba(158, 158, 158, 0.648);
 }
 
